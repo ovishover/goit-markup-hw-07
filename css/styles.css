@@ -113,7 +113,7 @@ ul .current {
 }
 
 .current:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -694,7 +694,7 @@ ul .current {
   margin: -1px;
 }
 .sign-check::before {
-  content: " ";
+  content: ' ';
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
