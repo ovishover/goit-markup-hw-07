@@ -1,0 +1,39 @@
+.logo-nav {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-footer > span {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+}
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.logo-footer:hover {
+  color: #ffffff;
+}
+
+.logo-nav > span {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+}
+.logo-nav:hover {
+  color: #000000;
+}
