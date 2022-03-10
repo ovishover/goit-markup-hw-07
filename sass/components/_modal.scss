@@ -40,3 +40,156 @@
 .close:focus {
   color: var(--accent-color);
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.label-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: #757575;
+}
+
+.callback-input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 30px;
+  transition: border-color var(--transition-time) var(--attenuation-function);
+}
+.callback-coment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+  width: 100%;
+  transition: border-color var(--transition-time) var(--attenuation-function);
+}
+
+.callback-coment::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.sign-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sign-check {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
+.modal-check:checked + .sign-check::before {
+  background-image: url(../images/sign.svg);
+  background-color: var(--accent-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.sign-check::before {
+  content: ' ';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  display: block;
+  margin-right: 8px;
+}
+
+.sign-link,
+.sign-link:hover,
+.sign-link:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.callback-icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 12px;
+  transition: fill var(--transition-time) var(--attenuation-function);
+}
+
+.form-field + .form-field {
+  margin-top: 10px;
+}
+
+.form-field:focus-within .callback-icon,
+.form-field:hover .callback-icon {
+  fill: var(--accent-color);
+}
+.form-field:focus-within .callback-input,
+.form-field:hover .callback-input {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.form-field:focus-within .callback-coment,
+.form-field:hover .callback-coment {
+  border-color: var(--accent-color);
+  outline: none;
+}
