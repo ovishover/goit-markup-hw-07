@@ -1,0 +1,14 @@
+.benefits-discription {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.benefits-list {
+  display: flex;
+  margin-left: calc(-1 * var(--margin-calc));
+}
+.benefits-list > .benefits-item {
+  flex-basis: calc(100% / 4 - var(--margin-calc));
+  margin-left: var(--margin-calc);
+}

@@ -53,34 +53,6 @@
   opacity: 1;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal-title {
-  margin-bottom: 12px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-
-.label-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-  color: #757575;
-}
-
 .callback-input {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -139,18 +111,6 @@
   border: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 .sign-check::before {
   content: ' ';
   width: 16px;

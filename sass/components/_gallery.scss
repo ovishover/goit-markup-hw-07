@@ -13,15 +13,6 @@
   margin-top: 0px;
 }
 
-.card-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--text-color);
-  margin-bottom: 4px;
-}
-
 .gallery-category {
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -50,4 +41,24 @@
 .gallery-link:hover .work-description,
 .gallery-link:focus .work-description {
   transform: translateY(0);
+}
+
+.work-description {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--transition-time) var(--attenuation-function);
+}
+
+.work-description-block {
+  position: relative;
+  overflow: hidden;
 }

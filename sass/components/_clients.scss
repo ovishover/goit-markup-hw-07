@@ -1,0 +1,11 @@
+.clients-item:not(:last-child) {
+  padding-right: 30px;
+}
+.client-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}

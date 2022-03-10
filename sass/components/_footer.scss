@@ -14,18 +14,7 @@
 .join-list {
   display: flex;
 }
-.join-title,
-.subscrible-title {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: (16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
+
 .footer-adress:not(:last-child) {
   margin-bottom: 9px;
 }
