@@ -1,3 +1,4 @@
+// настройки из занятия с А.Данилко.
 // {
 //   "liveSassCompile.settings.formats": [
 //     { "format": "expanded", "extensionName": ".css", "savePath": "/css" },
@@ -10,6 +11,7 @@
 //   "liveSassCompile.settings.autoprefix": null
 // }
 
+// настройки из записи с А.Репетой.
 {
   "liveSassCompile.settings.formats": [
     {
