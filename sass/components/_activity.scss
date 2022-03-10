@@ -3,19 +3,19 @@
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--margin-calc));
   margin-top: calc(-1 * var(--margin-calc));
-}
-.activity-list > .activity-item {
-  flex-basis: calc(100% / 3 - var(--margin-calc));
-  margin-left: var(--margin-calc);
-  margin-top: var(--margin-calc);
-}
-.activity {
-  padding-top: 0px;
+  .activity-item {
+    flex-basis: calc(100% / 3 - var(--margin-calc));
+    margin-left: var(--margin-calc);
+    margin-top: var(--margin-calc);
+  }
 }
 
-.activity-img {
-  margin-right: 0px;
-}
-.activity-item {
-  position: relative;
+.activity {
+  padding-top: 0px;
+  &-img {
+    margin-right: 0px;
+  }
+  &-item {
+    position: relative;
+  }
 }

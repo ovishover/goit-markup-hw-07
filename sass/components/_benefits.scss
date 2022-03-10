@@ -7,8 +7,8 @@
 .benefits-list {
   display: flex;
   margin-left: calc(-1 * var(--margin-calc));
-}
-.benefits-list > .benefits-item {
-  flex-basis: calc(100% / 4 - var(--margin-calc));
-  margin-left: var(--margin-calc);
+  .benefits-item {
+    flex-basis: calc(100% / 4 - var(--margin-calc));
+    margin-left: var(--margin-calc);
+  }
 }

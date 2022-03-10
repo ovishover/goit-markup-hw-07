@@ -30,15 +30,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .close-icon {
   fill: currentColor;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--accent-color);
 }
 
 .backdrop {
@@ -70,15 +69,14 @@
   height: 120px;
   width: 100%;
   transition: border-color var(--transition-time) var(--attenuation-function);
-}
-
-.callback-coment::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-field {
@@ -102,6 +100,15 @@
   color: #757575;
   display: flex;
   align-items: center;
+  &::before {
+    content: ' ';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    display: block;
+    margin-right: 8px;
+  }
 }
 .modal-check:checked + .sign-check::before {
   background-image: url(../images/sign.svg);
@@ -109,16 +116,6 @@
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-}
-
-.sign-check::before {
-  content: ' ';
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000000;
-  border-radius: 2px;
-  display: block;
-  margin-right: 8px;
 }
 
 .sign-link,
