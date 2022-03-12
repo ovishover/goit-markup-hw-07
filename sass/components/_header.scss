@@ -5,10 +5,6 @@
     display: flex;
   }
 }
-.logo-nav > span {
-  font-family: Raleway, sans-serif;
-  color: var(--accent-color);
-}
 
 .adress-list .adress-item + .adress-item {
   margin-left: var(--margin-calc);
@@ -84,6 +80,6 @@ ul .current {
   }
 }
 
-.head-nav {
+.header__nav {
   align-items: center;
 }
