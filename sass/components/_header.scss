@@ -5,33 +5,10 @@
     display: flex;
   }
 }
-
-.adress-list .adress-item + .adress-item {
-  margin-left: var(--margin-calc);
-}
-.link {
-  padding: 32px 0;
+.header__nav {
   align-items: center;
-  display: flex;
-  transition: color var(--transition-time) var(--attenuation-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-  .adress-item-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
 }
 
-.benefit-image {
-  display: flex;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5f4fa;
-  margin-bottom: var(--margin-calc);
-}
 .nav-list {
   font-weight: 500;
   font-size: 14px;
@@ -46,11 +23,28 @@
     }
   }
 }
-.nav-list-item + .nav-list-item {
+.nav-list__item + .nav-list__item {
   margin-left: 50px;
 }
-.phone-number {
-  margin-left: 50px;
+
+.adress-list__item + .adress-list__item {
+  margin-left: var(--margin-calc);
+}
+.nav-list__link,
+.adress-list__link {
+  padding: 32px 0;
+  align-items: center;
+  display: flex;
+  transition: color var(--transition-time) var(--attenuation-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  .adress-list__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .adress-list {
@@ -78,8 +72,4 @@ ul .current {
     background-color: var(--accent-color);
     border-radius: 2px;
   }
-}
-
-.header__nav {
-  align-items: center;
 }
