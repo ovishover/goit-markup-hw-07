@@ -251,11 +251,10 @@ ul .current:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: calc(-1 * var(--margin-calc));
-  margin-top: calc(-1 * var(--margin-calc));
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 0px;
+  margin-left: calc(-1 * var(--margin-calc));
+  margin-top: calc(-1 * var(--margin-calc));
 }
 
 .gallery__item {

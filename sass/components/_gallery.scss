@@ -1,9 +1,8 @@
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: calc(-1 * var(--margin-calc));
   margin-top: calc(-1 * var(--margin-calc));
-  flex-wrap: wrap;
-  margin-top: 0px;
 }
 
 .gallery__item {
