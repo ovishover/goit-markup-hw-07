@@ -1,14 +1,12 @@
-.clients-item:not(:last-child) {
-  padding-right: 30px;
-}
-.client-icon {
-  fill: currentColor;
-}
-
 .clients-list {
   display: flex;
 }
-.clients-link {
+
+.clients-list__item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +22,8 @@
     color: var(--accent-color);
     border-color: var(--accent-color);
   }
+}
+
+.clients-list__icon {
+  fill: currentColor;
 }

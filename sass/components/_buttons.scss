@@ -39,16 +39,6 @@
   border-radius: 4px;
   border: none;
 }
-.subscribe-button {
-  background-color: var(--accent-color);
-  padding: 10px 32px;
-  min-width: 200px;
-  border-radius: 4px;
-  border: none;
-  margin-left: 12px;
-  align-items: center;
-  display: inline-flex;
-}
 
 .callback-button {
   background-color: var(--accent-color);
@@ -63,7 +53,9 @@
 .callback-input {
   width: 100%;
 }
-.button-link {
+
+.hero__button,
+.footer__button {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;

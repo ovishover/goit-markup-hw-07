@@ -1,19 +1,19 @@
-.join .social-item-link {
+.social__link {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list {
+.social {
   display: flex;
   justify-content: center;
 }
-.social-list-item + .social-list-item {
+.social__item + .social__item {
   margin-left: 10px;
 }
-.social-item-icon {
+.social__icon {
   fill: currentColor;
 }
-.social-item-link {
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -29,5 +29,8 @@
     background-color: var(--accent-color);
     color: #ffffff;
     border-radius: 50%;
+  }
+  &--white {
+    color: #ffffff;
   }
 }
