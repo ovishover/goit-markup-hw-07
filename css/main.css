@@ -247,7 +247,25 @@ ul .current:after {
   color: #757575;
 }
 
-.gallery-link {
+.gallery-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: calc(-1 * var(--margin-calc));
+  margin-top: calc(-1 * var(--margin-calc));
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.gallery__item {
+  -ms-flex-preferred-size: calc(100% / 3 - var(--margin-calc));
+      flex-basis: calc(100% / 3 - var(--margin-calc));
+  margin-left: var(--margin-calc);
+  margin-top: var(--margin-calc);
+}
+
+.gallery__link {
   display: block;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--transition-time) var(--attenuation-function);
@@ -256,41 +274,20 @@ ul .current:after {
   transition: box-shadow var(--transition-time) var(--attenuation-function), -webkit-box-shadow var(--transition-time) var(--attenuation-function);
 }
 
-.gallery-link:hover,
-.gallery-link:focus {
+.gallery__link:hover,
+.gallery__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 0px;
-}
-
-.gallery-category {
+.gallery__category {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.gallery-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: calc(-1 * var(--margin-calc));
-  margin-top: calc(-1 * var(--margin-calc));
-}
-
-.gallery-list > .gallery-item {
-  -ms-flex-preferred-size: calc(100% / 3 - var(--margin-calc));
-      flex-basis: calc(100% / 3 - var(--margin-calc));
-  margin-left: var(--margin-calc);
-  margin-top: var(--margin-calc);
-}
-
-.card-style {
+.gallery__style {
   padding: 20px 24px;
   background-color: #ffffff;
   border-left: 1px solid #eeeeee;
@@ -298,13 +295,13 @@ ul .current:after {
   border-bottom: 1px solid #eeeeee;
 }
 
-.gallery-link:hover .work-description,
-.gallery-link:focus .work-description {
+.gallery__link:hover .gallery__description,
+.gallery__link:focus .gallery__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.work-description {
+.gallery__description {
   position: absolute;
   top: 0;
   margin: 0;
@@ -323,9 +320,18 @@ ul .current:after {
   transition: transform var(--transition-time) var(--attenuation-function), -webkit-transform var(--transition-time) var(--attenuation-function);
 }
 
-.work-description-block {
+.gallery__img {
   position: relative;
   overflow: hidden;
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  margin-bottom: 4px;
 }
 
 .social__link {
@@ -378,7 +384,7 @@ ul .current:after {
   color: #ffffff;
 }
 
-.button {
+.button-list__radio {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -397,18 +403,14 @@ ul .current:after {
   transition: color var(--transition-time) var(--attenuation-function), background-color var(--transition-time) var(--attenuation-function), box-shadow var(--transition-time) var(--attenuation-function), -webkit-box-shadow var(--transition-time) var(--attenuation-function);
 }
 
-.button:hover, .button:focus {
+.button-list__radio:hover, .button-list__radio:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons-item + .buttons-item {
-  margin-left: 8px;
-}
-
-.buttons-list {
+.button__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +420,11 @@ ul .current:after {
   margin-bottom: 50px;
 }
 
-.main-button {
+.button-list__item + .button-list__item {
+  margin-left: 8px;
+}
+
+.main__button {
   background-color: var(--accent-color);
   padding: 10px 32px;
   min-width: 200px;
@@ -656,15 +662,6 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.card-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--text-color);
-  margin-bottom: 4px;
 }
 
 .label-title {

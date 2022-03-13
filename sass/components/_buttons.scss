@@ -1,4 +1,4 @@
-.button {
+.button-list__radio {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -23,16 +23,16 @@
   }
 }
 
-.buttons-item + .buttons-item {
-  margin-left: 8px;
-}
-.buttons-list {
+.button__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+.button-list__item + .button-list__item {
+  margin-left: 8px;
+}
 
-.main-button {
+.main__button {
   background-color: var(--accent-color);
   padding: 10px 32px;
   min-width: 200px;
